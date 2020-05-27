@@ -25,6 +25,7 @@ extern crate fortanix_sgx_abi;
 #[macro_use]
 extern crate lazy_static;
 extern crate futures;
+extern crate async_queue;
 
 mod command;
 mod library;
