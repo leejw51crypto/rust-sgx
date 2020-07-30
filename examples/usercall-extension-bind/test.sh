@@ -1,13 +1,15 @@
+rustup default nightly-2020-04-10
+
 set -e
 
 #Build custom runner
 cd runner
-cargo +nightly build
+cargo  build
 cd -
 
 #Build APP
 cd app
-cargo +nightly build --target=x86_64-fortanix-unknown-sgx
+cargo  build --target=x86_64-fortanix-unknown-sgx
 cd -
 
 #Convert the APP
